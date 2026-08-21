@@ -1,0 +1,10 @@
+<!DOCTYPE
+<head>
+    <style>
+        img{
+            width: 100px; /*o valor poder ser outro*/
+            height: 100px; /*o valor poder ser outro*/
+            object-fit: fill;
+        }
+    </style>
+</head>

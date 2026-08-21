@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Flexbox</title>
+    <style>
+        :root{
+           --cor-de-fundo: rgb(0,0,255);
+           --cor-da-fonte: #ff0000;  
+        }
+        
+        #container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            height: 30px;
+            background-color: var(--cor-de-fundo);
+            color: var(--cor-da-fonte);
+
+        ul{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            list-style: none; /* tirar bolinhas */
+        }
+
+        a {
+            text-decoration: none;
+            color: white
+        }
+
+        a:hover{
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <nav id="container">
+        <span>LOGO</span>
+
+        <ul>
+            <li><a href="#">Opção 1</a></li>
+            <li><a href="#">Opção 2</a></li>
+            <li><a href="#">Opção 3</a></li>
+        </ul>
+
+        <a href="#">Login</a>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo Tabela</title>
+    <style>
+        table, tr, td, th{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        .cor_escura{
+            background-color: gray;
+        }
+        #texto-vertical{
+            /*writing-mode: vertical-rl;*/
+            transform: rotate(-90deg);
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th colspan="3">Relação de Alunos</th>
+        </tr>
+        <!--
+           Célula com texto na vertical
+        -->
+        <tr>
+            <td rowspan="6" id="texto-vertical"> DS </td>
+        </tr>
+        <tr>
+            <th> RA </th>
+            <th> Nome </th>
+        </tr>
+        
+        <tr class="cor_escura">
+            <td>22324</td>
+            <td>Maria Eduarda</td>
+        </tr>
+        <tr>
+            <td>24554</td>
+            <td>Maria Eduarda</td>
+        </tr>
+        <tr class="cor_escura">
+            <td>24301</td>
+            <td>Beatriz</td>
+        </tr>
+        <tr>
+            <td>24325</td>
+            <td>Kauan</td>
+        </tr>
+
+    </table>
+</body>
+
+</html>

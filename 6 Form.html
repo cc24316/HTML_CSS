@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        * {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        form {
+            background-color: rgb(212, 209, 209);
+            padding: 20px;
+            width: 70%;
+            margin: auto;
+            border-radius: 10px;
+        }
+
+        #comentario {
+            display: flex;
+        }
+
+        form div {
+            padding: 5px;
+        }
+
+        input[type=text],
+        textarea {
+            border: 2px solid rgb(23, 23, 246);
+            padding: 3px;
+            border-radius: 3px;
+        }
+
+        input[type=text]:focus, textarea:focus{
+            background-color: rgba(0, 0, 255, 0.173);
+        }
+
+        input[type=reset],button{
+            width: 100px;
+            background-color: rgb(247, 43, 87);
+            color: white;
+            padding: 5px;
+            border: none;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <form>
+            <div>
+                <label>
+                    Nome:
+                </label>
+                <input type="text" id="nome" name="nome" placeholder="Digite o seu nome">
+            </div>
+
+            <div>
+                <label>Sexo:</label>
+
+                <input type="radio" id="sexo" name="sexo" value="Feminino">
+                <label>Feminino</label>
+
+                <input type="radio" id="sexo" name="sexo" value="M">
+                <label>Masculino</label>
+            </div>
+
+            <div id="areas_interesse">
+                Selecione a área de interesse:
+                <input type="radio" id="area" name="area" value="Exatas">
+                <label>Exatas</label>
+
+                <input type="radio" id="area" name="area" value="Humanas">
+                <label>Humanas</label>
+
+                <input type="radio" id="area" name="area" value="Biológicas">
+                <label>Biológicas</label>
+            </div>
+
+            <div>
+                <label>
+                    Campeonatos de futebol:
+                </label>
+                <input type="checkbox" id="camp1" name="camp1" value="SP">
+                <label>Paulista</label>
+
+                <input type="checkbox" id="camp2" name="camp2" value="RJ">
+                <label>Carioca</label>
+
+                <input type="checkbox" id="camp3" name="camp3" value="MG">
+                <label>Mineiro</label>
+            </div>
+
+            <div>
+                <label for="estado">Estado:</label>
+
+                <select id="estado" name="estado">
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="ES">Espírito Santo </option>
+                </select>
+            </div>
+
+            <div id="comentario">
+                <label for="comentario">Comentário: </label>
+                <textarea rows="5"></textarea>
+            </div>
+
+            <div>
+                <button>Enviar dados</button>
+                <input type="reset" value="Limpar">
+            </div>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
